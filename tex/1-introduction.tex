@@ -38,3 +38,19 @@ Here's a citation: \cite{Wacker2016}. Two pictures are shown, Figures \ref{fig:m
   \end{tabular}
   \label{tab:a-table}
 \end{table}
+
+\begin{equation*}
+  \begin{aligned}
+      & \underset{x, u}{\text{min}}
+      & & \int_{t_k}^{t_{k+T}} ( \*{e}(\*{x})^{\top} \*{Q}_p \*{e}(\*{x}) +
+      \dot{\*{e}}(\*{x})^{\top} \*{Q}_d \dot{\*{e}}(\*{x}) +
+      \ddot{\*{q}}^{\top} \*{R}_{\ddot{\*{q}}} \ddot{\*{q}} +
+      \*{u}^{\top} \*{R}_{\*{u}} \*{u} ) \,dt\\
+      & \text{s.t.}
+      & & \dot{\*x} = \*f(\*x,\*u), \\
+      &&& \bar{\*x}_{lb} \leq \*x \leq \bar{\*x}_{ub}, \\
+      &&& \bar{\*u}_{lb} \leq \*u \leq \bar{\*u}_{ub}, \\
+      &&& \bar{\ddot{\*q}}_{lb} \leq \ddot{\*q} \leq \bar{\ddot{\*q}}_{ub}, \\
+      &&& \*x(t_k) = \*x_0. \\
+      \end{aligned}
+\end{equation*}
