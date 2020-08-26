@@ -41,7 +41,7 @@ Here's a citation: \cite{Wacker2016}. Two pictures are shown, Figures \ref{fig:m
 
 \begin{equation*}
   \begin{aligned}
-      & \underset{x, u}{\text{min}}
+      & \underset{\*x, \*u}{\text{min}}
       & & \int_{t_k}^{t_{k+T}} ( \*{e}(\*{x})^{\top} \*{Q}_p \*{e}(\*{x}) +
       \dot{\*{e}}(\*{x})^{\top} \*{Q}_d \dot{\*{e}}(\*{x}) +
       \ddot{\*{q}}^{\top} \*{R}_{\ddot{\*{q}}} \ddot{\*{q}} +
@@ -53,4 +53,12 @@ Here's a citation: \cite{Wacker2016}. Two pictures are shown, Figures \ref{fig:m
       &&& \bar{\ddot{\*q}}_{lb} \leq \ddot{\*q} \leq \bar{\ddot{\*q}}_{ub}, \\
       &&& \*x(t_k) = \*x_0. \\
       \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+  f(x,u) = \begin{bmatrix} \dot{q} \\ M(q)^{-1} (\tau - C(q, \dot{q}) - G(q)) \end{bmatrix}
+\end{equation*}
+
+\begin{equation*}
+  p(\*y | \*X, \boldsymbol{\theta}) = \dots
 \end{equation*}

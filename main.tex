@@ -5,19 +5,21 @@
 
 \begin{document}
 
+\pagestyle{start}
+
 \frontmatter
 \pagestyle{plain}
 \begingroup
-\let\cleardoublepage\clearpage
+% \let\cleardoublepage\newpage
 \input{tex/01-abstract}
 \input{tex/02-sammendrag}
-\tableofcontents \clearpage
-\listoftables    \clearpage
-\listoffigures   \clearpage
+\tableofcontents \newpage
+\listoftables    \newpage
+\listoffigures   \newpage
 \endgroup
 
 \mainmatter
-\pagestyle{headings}
+\pagestyle{main}
 \input{tex/1-introduction}
 
 \input{tex/2-theory}
